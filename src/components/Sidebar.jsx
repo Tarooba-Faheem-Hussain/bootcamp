@@ -25,8 +25,8 @@ const Sidebar = () => {
   };
   const Menus = [
     { title: "Home", src: "Chart_fill" },
-    { title: "Profile", src: "User" },
-    { title: "About", src: "Chart_Fill" },
+    // { title: "Profile", src: "User" },
+    // { title: "About", src: "Chart_Fill" },
   ];
   if (isLoading) {
     return <div>Loading...</div>; // Show a loading indicator

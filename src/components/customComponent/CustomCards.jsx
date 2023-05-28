@@ -14,8 +14,15 @@ export const CustomCards = ({
 }) => {
   const [showModal, setShowModal] = useState(false);
   const [showEidtModal, setEditShowModal] = useState(false);
+  const [open, setOpen] = React.useState(false);
   const deleteFn = useActivityDelete();
 
+  const handleClickToOpen = () => {
+    setOpen(true);
+  };
+  const handleToClose = () => {
+    setOpen(false);
+  };
   const onSuccessCb = async (data) => {
     try {
       // <Link to="/Sidebar"></Link>;
@@ -60,7 +67,7 @@ export const CustomCards = ({
             setEditShowModal(true);
           }}
         >
-          EDIT
+          Edit
         </button>
         {showEidtModal ? (
           <>
@@ -81,12 +88,42 @@ export const CustomCards = ({
           </>
         ) : null}
 
-        <button
-          className="bg-teal-900 text-white px-4 py-2 rounded-md m-2"
-          onClick={() => handleDelete()}
-        >
-          Delete
-        </button>
+        <div>
+          <button
+            class="bg-teal-900 text-white px-4 py-2 rounded-md m-2"
+            type="button"
+            onClick={handleClickToOpen}
+          >
+            Delete
+          </button>
+          <dialog
+            class="bg-teal-900 text-white rounded-md items-center		 "
+            open={open}
+            onClose={handleToClose}
+          >
+            <h4 class="  pb-5 ">Do you want to delete this avtivity?</h4>
+
+            <dialogactions className=" flex justify-center ">
+              <button
+                class="bg-white text-teal-900 px-4 py-2 rounded-md m-2"
+                onClick={() => handleDelete()}
+              >
+                Yes
+              </button>
+
+              <button
+                class="bg-white text-teal-900 px-4 py-2 rounded-md m-2"
+                onClick={handleToClose}
+                color="primary"
+                autoFocus
+              >
+                No
+              </button>
+            </dialogactions>
+          </dialog>
+        </div>
+
+        <div></div>
       </div>
     </div>
   );
