@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import loginImg from "../assets/login.png";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/logo1.png";
 import CustomInput from "./customComponent/CustomInput";
 import { useLogin } from "../assets/hooks/hooks";
 import { storeToken } from "../assets/token";
@@ -80,13 +80,13 @@ export default function Signin() {
 
   return (
     <div className="flex h-screen w-full items-center justify-center bg-cover bg-no-repeat bg-[url('./assets/login.png')]">
-      <div className="rounded-xl bg-gray-600 bg-opacity-50 px-16 py-10 shadow-lg backdrop-blur-md max-sm:px-8">
+      <div className="rounded-xl bg-gray-600 bg-opacity-50 px-16 py-8 shadow-lg backdrop-blur-md max-sm:px-8">
         <div>
           <div className="mb-4 flex flex-col items-center">
             <img src={Logo} />
           </div>
           <form action="#" className=" flex flex-col item-center ">
-            <h2 className="text-4xl font-bold text-center text-white">
+            <h2 className="text-lg mb-3 font-bold text-center text-white">
               SignIn
             </h2>
             {emailError && <p className="error">{emailError}</p>}

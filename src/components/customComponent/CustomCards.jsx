@@ -61,7 +61,7 @@ export const CustomCards = ({
         <button
           data-modal-target="defaultModal"
           data-modal-toggle="defaultModal"
-          className="bg-teal-900 text-white px-4 py-2 rounded-md m-2"
+          className="bg-teal-900 text-white px-7 py-2 rounded-md m-2"
           type="button"
           onClick={() => {
             setEditShowModal(true);

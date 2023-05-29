@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import CustomInput from "./customComponent/customInput";
+import CustomInput from "./customComponent/CustomInput";
 import { useActivityCreate } from "../assets/hooks/hooks";
 
 export default function Modal({ callb }) {
@@ -130,9 +130,17 @@ export default function Modal({ callb }) {
 
               <CustomInput
                 type="number"
-                placeholder="Duration"
+                placeholder="Duration in hrs"
                 name="time_duration"
                 heading="Duration"
+                handleChange={(text) => handleDurationChange(text)}
+              />
+
+              <CustomInput
+                type="Date"
+                placeholder="Date"
+                name="Date"
+                heading="Date"
                 handleChange={(text) => handleDurationChange(text)}
               />
             </div>
