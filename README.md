@@ -92,17 +92,18 @@ User can add new exercise activities by providing relevant details such as exerc
 
 
 
-- **Edit Activity:**
+**Edit Activity:**
 Users can edit activities by providing relevant details such as exercise Activity Name, Activity type, Description, duration, and date.
 <img width="396" alt="edit2" src="https://github.com/Tarooba-Faheem-Hussain/bootcamp/assets/56295971/1d1b6b60-1b24-4fd3-8817-f98988c32af5">
 <img width="675" alt="edit" src="https://github.com/Tarooba-Faheem-Hussain/bootcamp/assets/56295971/9bba42f8-f36d-4ed5-a1d8-cc6fc50cf607">
 
 
 **Logout:**
-User can securely log out of accounts to protect their session.
+- User can securely log out of accounts to protect their session.
 <img width="584" alt="logout" src="https://github.com/Tarooba-Faheem-Hussain/bootcamp/assets/56295971/43e5f7e7-34f2-41f0-8f6e-465060f56ca9">
 <img width="402" alt="logout2" src="https://github.com/Tarooba-Faheem-Hussain/bootcamp/assets/56295971/cc743878-4866-4bb9-b80a-2086033d92ca">
 
-**Delete:**
-User can delete the activity cards.
+
+**Delete:** 
+- User can delete the activity cards.
 <img width="417" alt="delete" src="https://github.com/Tarooba-Faheem-Hussain/bootcamp/assets/56295971/21f266fa-e402-4019-9040-42531a9d586e">
